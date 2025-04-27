@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-gray-800 dark:text-gray-200 overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+  
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+  
+  .animate-spin-slow {
+    animation: spin 3s linear infinite;
+  }
+  
+  .animate-title {
+    animation: slide-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-in-out forwards;
+  }
+  
+  .animate-slide-up {
+    animation: slide-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  
+  .animate-skill-progress {
+    animation: skill-progress 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes blob {
+  0% {
+    transform: scale(1) translate(0px, 0px);
+  }
+  33% {
+    transform: scale(1.1) translate(30px, -50px);
+  }
+  66% {
+    transform: scale(0.9) translate(-20px, 20px);
+  }
+  100% {
+    transform: scale(1) translate(0px, 0px);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(3rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes skill-progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
