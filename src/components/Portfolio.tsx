@@ -25,7 +25,7 @@ const projects: Project[] = [
     description: 'A creative portfolio showcasing a Designer & Developer\'s work with immersive galleries.',
     tags: ['React', 'Tailwind', 'Animation'],
     imageUrl: 'https://images.pexels.com/photos/326502/pexels-photo-326502.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-    link: '#'
+    link: 'https://github.com/MedSadakDhieb/MedSDhieb'
   },
   /*{
     id: 4,

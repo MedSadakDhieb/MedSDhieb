@@ -1,5 +1,5 @@
 import React from 'react';
-import { Linkedin, Twitter, Github, Instagram } from 'lucide-react';
+import { Linkedin, Github } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -14,17 +14,12 @@ const Footer: React.FC = () => {
           </a>
           
           <div className="flex space-x-6 mb-8">
-            <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-purple-500 dark:hover:text-cyan-300 transition-colors">
-              <Twitter size={20} />
-            </a>
-            <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-purple-500 dark:hover:text-cyan-300 transition-colors">
+
+            <a href="https://github.com/MedSadakDhieb" className="text-gray-600 dark:text-gray-300 hover:text-purple-500 dark:hover:text-cyan-300 transition-colors">
               <Github size={20} />
             </a>
-            <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-purple-500 dark:hover:text-cyan-300 transition-colors">
+            <a href="linkedin.com/in/med-sadak-24b6932b3" className="text-gray-600 dark:text-gray-300 hover:text-purple-500 dark:hover:text-cyan-300 transition-colors">
               <Linkedin size={20} />
-            </a>
-            <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-purple-500 dark:hover:text-cyan-300 transition-colors">
-              <Instagram size={20} />
             </a>
           </div>
           
@@ -37,7 +32,7 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="text-center text-gray-500 dark:text-gray-400 text-sm">
-            <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Med Sadak Dhieb. All rights reserved.</p>
             <p className="mt-1">Crafted with passion and creativity</p>
           </div>
         </div>

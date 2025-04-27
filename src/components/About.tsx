@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import portrait from '../IMG_1241.jpg';
 
 const About: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -48,11 +49,11 @@ const About: React.FC = () => {
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-purple-500 to-pink-500 dark:from-blue-500 dark:to-cyan-400 p-1">
                 <div className="w-full h-full rounded-xl overflow-hidden bg-gray-200 dark:bg-gray-800">
-                  <img 
-                    src="IMG_1241.jpg" 
-                    alt="Portrait" 
-                    className="w-full h-full object-cover"
-                  />
+                <img 
+                src={portrait} 
+                alt="Portrait" 
+                className="w-full h-full object-cover"
+/>
                 </div>
               </div>
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-400 dark:bg-cyan-500 rounded-full opacity-30 blur-2xl"></div>
